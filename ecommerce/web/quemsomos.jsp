@@ -103,6 +103,55 @@
                     </p>
                 </li>
             </ul>
+            
+             <!-- GRUPO SEIS -->
+            
+             <h2>Grupo #6</h2>
+            <ul class="list-group col-md-6">
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Cauane Roberta
+                        <small>
+                            <span class="label label-primary">SCRUM MASTER</span>
+                        </small>
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> cauane_roberta@hotmail.com
+                        <br>
+                        <strong>Github:</strong> Cauane
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Guilherme Bitencourt
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> guilhermesip11@gmail.com
+                        <br>
+                        <strong>Github:</strong> Guilherme3991
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        José Antonio
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> eternotoddy@gmail.com
+                        <br>
+                        <strong>Github:</strong> zantoni99
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Marcus Vinicius
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> makinho230197@gmail.com
+                        <br>
+                        <strong>Github:</strong> markinhob3
+                    </p>
+                </li>               
+            </ul>
 
         </div>
 
