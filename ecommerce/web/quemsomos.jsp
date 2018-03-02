@@ -17,7 +17,7 @@
         <div class="container">
             <h1>Quem Somos?</h1>
 
-            <h2>Grupo #1</h2>
+            <h2>Grupo #4</h2>
             <ul class="list-group col-md-6">
                 <li class="list-group-item">
                     <h4 class="list-group-item-heading">
