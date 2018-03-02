@@ -239,7 +239,51 @@
             </div>  
 
         </div>
-
+<div class="container">
+            <div class="topo">
+             <h1>
+                 Grupo #2
+             </h1>
+        </div>
+        <div class="corpo bg-light" >
+            <div class="container">
+                <div class="apre">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6" >Murilo Santos de Lima <span style="margin-left: 50px;" class="label label-primary">SCRUM MASTER</span></h4>
+                            <i>murilosantos.lima@yahoo.com.br</i>
+                             
+                            
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">Gustavo de Castro Costa Silva</h4>
+                            <i>gustavocastrocs@gmail.com</i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">Allan Rieri Santos Fernandes</h4>
+                            <i>allanrieri@gmail.com</i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">William de oliveira Greco</h4>
+                            <i>william.zeal@hotmail.com</i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">Julio Cesar da Cruz Deniz</h4>
+                            <i>falta email</i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">Lucas Machado</h4>
+                            <i>lucasmachadopaulista@hotmail.com</i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">  
+                            <h4 class="display-6">Danilo Lima da Silva Costa</h4>
+                            <i>...email</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
