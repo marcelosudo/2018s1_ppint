@@ -16,7 +16,10 @@
     <body>
         <div class="container">
             <h1>Quem Somos?</h1>
-
+            
+            <div class="col-md-12">
+                
+           
             <h2>Grupo #1</h2>
             <ul class="list-group col-md-6">
                 <li class="list-group-item">
@@ -103,10 +106,93 @@
                     </p>
                 </li>
             </ul>
-
         </div>
-
-
+         
+            <div class="col-md-12">
+            <h2>Grupo #7</h2>
+            <ul class="list-group col-md-6">
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Caio Augusto Faria - SCRUM Master
+                        <small>
+                            <span class="label label-primary">SCRUM MASTER</span>
+                        </small>
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> caioafaria@outlook.com
+                        <br>
+                        <strong>Github:</strong> caiofaria123
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                       João Francisco Martins Junior
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> joaofmartinsjunior@gmail.com
+                        <br>
+                        <strong>Github:</strong> joaofmjunior
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        José Alexandre Junqueira Ribeiro Junior
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> jajrjunior95@gmail.com
+                        <br>
+                        <strong>Github:</strong> juniorjose1
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Jonas Almeida de Souza
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> jonas92sp@gmail.com
+                        <br>
+                        <strong>Github:</strong> jalsouza
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Luis Felipe Assis Leal
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> felipe.leal94@hotmail.com
+                        <br>
+                        <strong>Github:</strong> felipeleal94
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Marcus Vinicius de Souza Muniz
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> marcus.souza.a1@gmail.com
+                        <br>
+                        <strong>Github:</strong> marcusviniciusmuniz
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Renan Vaquéli de Paula
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> renanrvp@hotmail.com.br
+                        <br>
+                        <strong>Github:</strong> renanrvp
+                    </p>
+                </li>
+                
+            </ul>
+            </div>    
+            
+            
+        </div>
+        
+        
+      
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
