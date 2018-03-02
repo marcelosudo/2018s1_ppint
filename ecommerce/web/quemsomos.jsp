@@ -1,4 +1,5 @@
 
+
 <%--
     Document   : quemsomos
     Created on : 27/02/2018, 16:23:54
@@ -19,7 +20,7 @@
             <h1>Quem Somos?</h1>
 
             <div class="col-md-12">
-                <h2>Grupo #1</h2>
+                <h2>Grupo #4</h2>
                 <ul class="list-group col-md-6">
                     <li class="list-group-item">
                         <h4 class="list-group-item-heading">
