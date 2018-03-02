@@ -239,8 +239,9 @@
             </div>  
 
         </div>
-<
+
             <div class="container">
+                <h2>Grupo #2</h2>
                 <div class="apre">
                     <div id="list-example" class="list-group">
                         <a class="list-group-item list-group-item-action" href="#list-item-1">  
