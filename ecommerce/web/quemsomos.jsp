@@ -18,6 +18,88 @@
     <body>
         <div class="container">
             <h1>Quem Somos?</h1>
+    <!-- GRUPO UM -->
+	        <div class="col-md-12">
+             <h2>Grupo #1</h2>
+            <ul class="list-group col-md-6">
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Evaldo Marrano Gonçalves Lopes
+                        <small>
+                            <span class="label label-primary">SCRUM MASTER</span>
+                        </small>
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> docontratosocial@hotmail.com
+                        <br>
+                        <strong>Github:</strong> evaldomaglopes
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Gustavo Victor Silva
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> gustavovictor94@gmail.com
+                        <br>
+                        <strong>Github:</strong> GustavoVictor
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Juan Saeta Farinha
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> jsaetafarinha@gmail.com
+                        <br>
+                        <strong>Github:</strong> jsaeta
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Ygor Bontia de Oliveira
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> ygorbontia@gmail.com
+                        <br>
+                        <strong>Github:</strong> ygorbontia
+                    </p>
+                </li>   
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Arthur Dotto dos Santos
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> artdotto@hotmail.com
+                        <br>
+                        <strong>Github:</strong> artdotto
+                    </p>
+                </li> 
+               <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Leonardo Natal da Silva
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> leonardo_natal93@hotmail.com
+                        <br>
+                        <strong>Github:</strong> Leonardonatal
+                    </p>
+                </li> 
+		<li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        William Marques
+                        <small>
+                            <span class="label label-primary">SCRUM MASTER</span>
+                        </small>
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> williamrasengan@hotmail.com
+                        <br>
+                        <strong>Github:</strong> WilliamMarquesAraujo
+                    </p>
+                </li>
+            </ul>
+    </div>
 
             <div class="col-md-12">
                 <h2>Grupo #4</h2>
