@@ -189,6 +189,86 @@
                     </li>
                 </ul>
             </div>
+             <!-- GRUPO 5 -->
+            <div class="container">
+            <h2>Grupo #5</h2>
+            <ul class="list-group col-md-6">
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        João Vitor Aguilera
+                        <small>
+                            <span class="label label-primary">SCRUM MASTER</span>
+                        </small>
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> joao.affonso@hotmail.com
+                        <br>
+                        <strong>Github:</strong> joaoaguilera97
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Michele Gastao
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> mixele.r.s@gmail.com
+                        <br>
+                        <strong>Github:</strong> michelegastao
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                       Beatrice Borges
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> biahborges98@hotmail.com
+                        <br>
+                        <strong>Github:</strong> BiaHBorges
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Guilherme Chagas
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> guilhermechagasg2@gmail.com
+                        <br>
+                        <strong>Github:</strong> guichagas
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Vitor Augusto
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> vitorarl1995@gmail.com
+                        <br>
+                        <strong>Github:</strong> vitorarl
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Pedro Hitoshi
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> pedrohitoshi@gmail.com
+                        <br>
+                        <strong>Github:</strong> pedrohitoshi
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        Bruno Primon
+                    </h4>
+                    <p class="list-group-item-text">
+                        <strong>E-mail:</strong> sjc_sro@hotmail.com
+                        <br>
+                        <strong>Github:</strong> brunoprimon
+                    </p>
+                </li>
+            </ul>
+
+            </div>
             <!-- GRUPO SEIS -->
             <div class="col-md-12">
                 <h2>Grupo #6</h2>
