@@ -1,71 +1,36 @@
 <!doctype html>
-<head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Produto de Beleza</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-<html>
-    <head>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="_css/estilo.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Inicio Cabeçalho -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                        <span class="sr-only">Toggle navigation</span> 
-                    </button> 
-                    <a class="navbar-brand" href="#">Rede de Beleza</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Categorias<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Feminino</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Masculino</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Infantil</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="navbar" href="#">Parcele em 10x sem juros</a></li> 
-                        <li><a class="navbar" href="#">Meus pedidos</a>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group"><input class="form-control" type="text" placeholder="Pesquisar" /></div>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </form>
-                </div><!-- /.navbar-collapse -->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Item 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Item 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Item 3</a>
+  </li>
+</ul>
 
-            </div><!-- /.container -->
-            <div>
-
-                <div class="jumbotron">
-                    <div class="container">
-
-
-                        <h3>Quer ser um Revendedor?</h3>
-                        <p>Faça parte desse Time!</p>
-                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Leia mais &raquo;</a></p>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-        <!-- Fim do codigo -->
-        <script src="../js/jquery.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="_js/script.js"></script>
-    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
