@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,25 +8,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Carrousel</title>
+    <title>Hello, world!</title>
   </head>
   <body>
-
-<!-- Slider -->
-<div id="carouselImages" class="carousel slide" data-ride="carousel">
+    
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="http://www.natura.com.br/sites/default/files/item-carousel/cf-aquarela-c04_0.jpg" alt="First slide">
+      <img class="d-block w-100" src="http://belezapro.com.br/img/banner.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/11/17/39563728f42ca50.jpg" alt="Second slide">
+      <img class="d-block w-100" src="http://www.amway.com.br/medias/Banner-Artistry-14-01-16-960X344px.jpg?context=bWFzdGVyfHJvb3R8Mjk2OTMwfGltYWdlL2pwZWd8aDI0L2g5ZS84Nzk2OTI3MDMzMzc0LmpwZ3wxMmExOTQyMWE3NDhhZGUwNDU5OTQ0Y2ZkNmVmNDZhMGIzZGY2ZGU3N2FhYzQwN2ZiYzk0MjdmYTBiZjRjMDQ0" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="http://boticario.vteximg.com.br/arquivos/ids/190410/bg-cat-fem-corpo-banho.jpg" alt="Third slide">
-      </div>
+      <img class="d-block w-100" src="https://salaoaninhabiocale.files.wordpress.com/2016/03/salao-aninha-biocale-cabelereira-selagem-pos-quimica-progressiva-botox-aracaju-sergipe-melhor-salao-de-aracaju1.jpg?w=723" alt="Third slide">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<!-- FIM Slider -->
+      <!-- -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
