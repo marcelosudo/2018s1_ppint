@@ -13,28 +13,48 @@
   </head>
   <body>
     <h1>Titulo da Pagina</h1>
-    <!-- Menu (NAV) com dropdown -->
-    <ul class="nav nav-pills nav-fill">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Inicio</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu Itens 1</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Item 1</a>
-      <a class="dropdown-item" href="#">Item 2</a>
-      <a class="dropdown-item" href="#">Item 3</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Item separado por divisoria</a>
-    </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link 2</a>
-  </li>
-</ul>
+ 
+    <!-- Menu (NAVBARS) com dropdown -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Beauty</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio<span class="sr-only">(Atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Item 1</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu Cascata
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Item_C_1</a>
+          <a class="dropdown-item" href="#">Item_C_2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Item separado</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">item 3</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="Pesquisa" placeholder="Pesquisa" aria-label="Pesquisa">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+    </form>
+  </div>
+</nav>
+<!-- FIM NAVBARS -->
+    
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
