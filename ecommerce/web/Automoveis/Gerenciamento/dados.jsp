@@ -22,8 +22,13 @@
             $(document).ready(function(){
                 pegarMarcas();
                 $('.dropdown-toggle').dropdown();
+                
                 $("#txtFiltroMarca").on("keyup", function() {
                     pegarMarcas($(this).val().toLowerCase());
+                });
+                
+                $("#txtFiltroCombustivel").on("keyup", function() {
+                    pegarCombustivel()($(this).val().toLowerCase());
                 });
                 
                 $('.dropdown').on('hide.bs.dropdown', function () {
@@ -33,6 +38,10 @@
                 $('#ddlMarcar').click(function(){
                     pegarMarcas();
                 });
+                
+                $('#ddlCombustivel').click(function(){
+                    pegarCombustivel();
+                });
             });
             
             function pegarMarcas(filtro){
@@ -41,7 +50,7 @@
                     url:"marcas.json",
                     dataType:"json",
                     success: function(dado){
-                        var res = dado
+                        var res = dado;
                         
                         if (filtro != undefined && filtro !== ""){
                             res = dado.filter(function(item){
@@ -60,6 +69,33 @@
             
             function selecionaMarca(item){
                 $('#ddlMarcar').text($(item).html());
+            }
+            
+            function pegarCombustivel(filtro){
+                $('#txtFiltroCombustivel ~ a').remove();
+                $.ajax({
+                    url:"combustivel.json",
+                    dataType:"json",
+                    success: function(dado){
+                        var res = dado;
+                        
+                        if (filtro != undefined && filtro !== ""){
+                            res = dado.filter(function(item){
+                               return item.toLowerCase().indexOf(filtro) > -1; 
+                            });
+                        }
+                        
+                        res = res.slice(0, 10);
+                        
+                        for(var i = 0; i < res.length; i++){
+                            $('#txtFiltroCombustivel').parent().append('<a class="dropdown-item" onclick="selecionaCombustivel(this)" href="#">' + res[i] + '</a>');
+                        }
+                    }
+                });
+            }
+            
+            function selecionaCombustivel(item){
+                $('#ddlCombustivel').text($(item).html());
             }
             
             $("#checkall").change(function () {
@@ -94,7 +130,7 @@
                                 <input class="form-control" id="txtFiltroMarca" type="text" placeholder="Pesquisar...">
                             </div>
                         </ul>
-                </div>
+                    </div>
                 </div>
                 <div class="col-md-2"><span>Modelo:</span></div>
                 <div class="col-md-4">
@@ -126,11 +162,17 @@
                 </div>
                 <div class="col-md-2"><span>Combustível:</span></div>
                 <div class="col-md-4">
-                    <select>
-                        <option value="Gasolina">Gasolina</option>
-                        <option value="Diesel">Diesel</option>
-                        <option value="Diesel">Alcool</option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="ddlCombustivel"
+                                        data-toggle="dropdown" aria-hasopoup="true" aria-expanded="false">
+                                        Selecione
+                        </button>
+                        <ul class="dropdown-menu">
+                            <div class="filtroLista">
+                                <input class="form-control" id="txtFiltroCombustivel" type="text" placeholder="Pesquisar...">
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">

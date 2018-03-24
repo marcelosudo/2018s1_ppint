@@ -9,3 +9,8 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.lista-acessorio{
+    border: 1px black solid;
+    border-radius: 10px;
+}
