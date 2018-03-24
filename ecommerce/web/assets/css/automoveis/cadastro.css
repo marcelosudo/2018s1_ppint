@@ -3,3 +3,9 @@
     border-radius: 15px;
     margin-top: 20px;
 }
+
+.filtroLista{
+    margin-top: -3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

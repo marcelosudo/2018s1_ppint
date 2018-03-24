@@ -21,20 +21,31 @@
         <script>
             $(document).ready(function(){
                 pegarMarcas();
-              $("#txtFilterMarca").on("keyup", function() {
-                    var value = $(this).val().toLowerCase();
-                    $(".dropdown-menu li").filter(function() {
-                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                    });
+              $("#txtFiltroMarca").on("keyup", function() {
+                    pegarMarcas($(this).val().toLowerCase());
+                    
               });
             });
             
             function pegarMarcas(filtro){
+                $('#txtFiltroMarca ~ a').remove();
                 $.ajax({
                     url:"marcas.json",
                     dataType:"json",
                     success: function(dado){
-                        return;
+                        var res = dado
+                        
+                        if (filtro != undefined && filtro !== ""){
+                            res = dado.filter(function(item){
+                               return item.toLowerCase().indexOf(filtro) > -1; 
+                            });
+                        }
+                        
+                        res = res.slice(0, 10);
+                        
+                        for(var i = 0; i < res.length; i++){
+                            $('#txtFiltroMarca').parent().append('<a class="dropdown-item" href="#">' + res[i] + '</a>');
+                        }
                     }
                 })
             }
@@ -67,7 +78,9 @@
                                         Selecione
                         </button>
                         <ul class="dropdown-menu">
-                                <input class="form-control" id="txtFilterMarca" type="text" placeholder="Pesquisar...">
+                            <div class="filtroLista">
+                                <input class="form-control" id="txtFiltroMarca" type="text" placeholder="Pesquisar...">
+                            </div>
                         </ul>
                 </div>
                 </div>
