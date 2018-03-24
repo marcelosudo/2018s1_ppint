@@ -257,7 +257,18 @@
                 <div class="col-md-12">
                     <input name="valor" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Pesquisar...">
                     <div clas="col-md-12 lista-acessorio">
-                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <label>Item 1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
