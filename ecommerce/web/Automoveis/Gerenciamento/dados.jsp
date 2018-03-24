@@ -21,10 +21,18 @@
         <script>
             $(document).ready(function(){
                 pegarMarcas();
-              $("#txtFiltroMarca").on("keyup", function() {
+                $('.dropdown-toggle').dropdown();
+                $("#txtFiltroMarca").on("keyup", function() {
                     pegarMarcas($(this).val().toLowerCase());
-                    
-              });
+                });
+                
+                $('.dropdown').on('hide.bs.dropdown', function () {
+                    $(this).find('input[type="text"]').val('');
+                });
+                
+                $('#ddlMarcar').click(function(){
+                    pegarMarcas();
+                });
             });
             
             function pegarMarcas(filtro){
@@ -44,10 +52,14 @@
                         res = res.slice(0, 10);
                         
                         for(var i = 0; i < res.length; i++){
-                            $('#txtFiltroMarca').parent().append('<a class="dropdown-item" href="#">' + res[i] + '</a>');
+                            $('#txtFiltroMarca').parent().append('<a class="dropdown-item" onclick="selecionaMarca(this)" href="#">' + res[i] + '</a>');
                         }
                     }
-                })
+                });
+            }
+            
+            function selecionaMarca(item){
+                $('#ddlMarcar').text($(item).html());
             }
             
             $("#checkall").change(function () {
@@ -73,7 +85,7 @@
                 <div class="col-md-2"><span>Marca:</span></div>
                 <div class="col-md-4">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="ddlMarcar"
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="ddlMarcar"
                                         data-toggle="dropdown" aria-hasopoup="true" aria-expanded="false">
                                         Selecione
                         </button>
