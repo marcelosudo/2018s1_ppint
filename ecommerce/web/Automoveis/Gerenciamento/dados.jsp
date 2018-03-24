@@ -28,7 +28,7 @@
                 });
                 
                 $("#txtFiltroCombustivel").on("keyup", function() {
-                    pegarCombustivel($(this).val().toLowerCase());
+                    pegarCombustivel()($(this).val().toLowerCase());
                 });
                 
                 $('.dropdown').on('hide.bs.dropdown', function () {
@@ -50,7 +50,7 @@
                     url:"marcas.json",
                     dataType:"json",
                     success: function(dado){
-                        var res = dado
+                        var res = dado;
                         
                         if (filtro != undefined && filtro !== ""){
                             res = dado.filter(function(item){
@@ -77,7 +77,7 @@
                     url:"combustivel.json",
                     dataType:"json",
                     success: function(dado){
-                        var res = dado
+                        var res = dado;
                         
                         if (filtro != undefined && filtro !== ""){
                             res = dado.filter(function(item){
