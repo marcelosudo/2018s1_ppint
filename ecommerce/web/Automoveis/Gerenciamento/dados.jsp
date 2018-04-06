@@ -20,8 +20,7 @@
     
         <script>
             $(document).ready(function(){
-                pegarAcessorio();
-                
+                pegarMarcas();
                 $('.dropdown-toggle').dropdown();
                 
                 $("#txtFiltroMarca").on("keyup", function() {
@@ -29,11 +28,7 @@
                 });
                 
                 $("#txtFiltroCombustivel").on("keyup", function() {
-                    pegarCombustivel($(this).val().toLowerCase());
-                });
-                
-                $("#txtFiltroAcessorio").on("keyup", function() {
-                    pegarAcessorio($(this).val().toLowerCase());
+                    pegarCombustivel()($(this).val().toLowerCase());
                 });
                 
                 $('.dropdown').on('hide.bs.dropdown', function () {
@@ -63,8 +58,6 @@
                             });
                         }
                         
-                        res.sort();
-                        
                         res = res.slice(0, 10);
                         
                         for(var i = 0; i < res.length; i++){
@@ -92,8 +85,6 @@
                             });
                         }
                         
-                        res.sort();
-                        
                         res = res.slice(0, 10);
                         
                         for(var i = 0; i < res.length; i++){
@@ -107,58 +98,22 @@
                 $('#ddlCombustivel').text($(item).html());
             }
             
-            function pegarAcessorio(filtro){
-                $('.lista-acessorio').empty();
-                $('.lista-acessorio').show();
-                $.ajax({
-                    url:"acessorio.json",
-                    dataType:"json",
-                    success: function(dado){
-                        var res = dado;
-                        
-                        if (filtro != undefined && filtro !== ""){
-                            res = dado.filter(function(item){
-                               return item.toLowerCase().indexOf(filtro) > -1; 
-                            });
-                        }
-                        
-                        if (res.length > 0) {
-                        
-                            res.sort();
-
-                            for(var i = 0; i < Math.ceil(res.length/4); i++){
-                                var numItems = res.length - (i * 4);
-
-                                var row = $('<div class="row"></div>');
-
-                                for(var j = 0; j < (numItems > 4 ? 4 : (numItems + 1)) ; j++){
-                                    var item = '<div class="col-md-3">' +
-                                                    '<div class="row">' + 
-                                                        '<div class="col-md-2">' + 
-                                                            (((i*4) + j < res.length) ? '<input type="checkbox" value="' + res[(i*4) + j] + '">' : '') + 
-                                                        '</div>' + 
-                                                        '<div class="col-md-10">' + 
-                                                            (((i*4) + j < res.length) ? '<label>' + res[(i*4) + j] + '</label>' : '') + 
-                                                        '</div>' + 
-                                                    '</div>'+
-                                                '</div>';
-
-                                    $(row).append(item);
-                                }
-
-                                $('.lista-acessorio').append(row);
-                            }
-                        }else{
-                            $('.lista-acessorio').hide();
-                        }
-                    }
-                });
-            }
+            $("#checkall").change(function () {
+                $(".checkitem").prop("checked", $(this).prop("checked"))
+            })
+            $(".checkitem").change(function () {
+                if ($(this).prop("checked") == false) {
+                    $("#checkall").prop("checked", false)
+                }
+                if ($(".checkitem:checked").length == $(".checkitem").length) {
+                    $("#checkall").prop("checked", true)
+                }
+            })
         </script>
     </head>
 
     <body>
-        <div id="dadosBasicos" class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12"><h1>Dados Gerais</h1></div>
             </div>
@@ -272,17 +227,124 @@
             </div>
             <br><br>
         </div>
-        <div id="acessorios" class="container">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Acessórios</h2>
+                <div class="col-md-12"><h2>Acessórios</h2>
                 </div>
-                <div class="col-md-12">
-                    <input id="txtFiltroAcessorio" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Pesquisar...">
-                    <div class="col-md-12 lista-acessorio">
+                <div class="container" style="margin:45px auto;">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="checkall"/> Selecionar Todos/Apagar Todos
+                        </label>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="arCondicionado"> Ar Condicionado
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="direcaoEletrica"> Direção Elétrica
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="centralMultimidia"> Central Multimídia
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="cameraRe"> Camera de Ré
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="sensorEstacionamento"> Sensor de Estacionamento
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="repetidorSeta"> Repetidor de Seta
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="modoEconomico"> Modo Econômico
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name="alarme"> Alarme
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="checkitem" name=""> 
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>  
