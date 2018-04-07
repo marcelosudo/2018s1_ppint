@@ -440,7 +440,15 @@
                 </div>
             </div>
         </div>
-        
+          <table border="2">
+         <caption><strong><font color=black>Grupo#3</font></strong></caption>    
+            <theader><tr><td>Nome</td> <td> Email </td></tr></theader>
+            <tr align=center bgcolor='#BDBDBD'><td>Rodrigo de Oliveira Ladeira</td> <td>rol.ladeira@gmail.com</td></tr>
+            <tr align=center bgcolor='#F2F2F2'><td>Nicholas Caetano</td> <td>nichollas36@hotmail.com</td></tr>
+            <tr align=center bgcolor='#BDBDBD'><td>Valdeir Nascimento</td> <td>valdeir.nascimento@live.com</td></tr>
+            <tr align=center bgcolor='#F2F2F2'><td>Zhao Jiacong</td> <td>zhaocontato@gmail.com</td></tr>
+        </table>        
+
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
