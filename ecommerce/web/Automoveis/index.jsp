@@ -169,6 +169,8 @@
                             <input type="text" class="inp_busca3" placeholder="Até: (max)"></li><br/>
                         <li>QUILOMETRAGEM <br /><br/><input type="text" class="inp_busca4" placeholder="De: (min)">
                             <input type="text" class="inp_busca3" placeholder="Até: (max)"></li>
+                        
+                        <li><br><br><input type="button" value="BUSCAR" class="btn_vermelho"></li>
 
                     </ul>
 
@@ -179,7 +181,7 @@
                     <ul class="carros">
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro01.jpg">
                             <div class="nome_carro">Renault Duster 1.6 4x2 4p...</div>
@@ -188,7 +190,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro02.jpg">
                             <div class="nome_carro">Fiat fiorino 1.4 furgão 2p...</div>
@@ -197,7 +199,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro03.jpg">
                             <div class="nome_carro">Nissan versa 1.6 16v SV 4p...</div>
@@ -206,7 +208,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro04.jpg">
                             <div class="nome_carro">Volkswagen golf 1.4 4p...</div>
@@ -215,7 +217,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro05.jpg">
                             <div class="nome_carro">Chevrolet cobalt 1.48v 4p...</div>
@@ -224,7 +226,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro06.jpg">
                             <div class="nome_carro">BMW 118i 16v turbo 4P...</div>
@@ -233,7 +235,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro07.jpg">
                             <div class="nome_carro">LandRover freelance2 6v 4p...</div>
@@ -242,7 +244,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro08.jpg">
                             <div class="nome_carro">X1 2.0 16V 4P 20I TURBO...</div>
@@ -251,7 +253,7 @@
                         </li>
                         <li>
                             <div id="efeito_carro">
-                                <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
+                                <center><a href="detalhes.jsp"><input type="button" value="COMPRAR" class="btn_vermelho"></a></center>
                             </div>
                             <img src="imagens/carros/carro09.jpg">
                             <div class="nome_carro">CLA 250 2.0 SPORT 16V TURBO...</div>

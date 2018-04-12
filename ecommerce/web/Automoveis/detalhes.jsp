@@ -191,16 +191,30 @@
             </ul>
             
             <div id="desc1" class="scroll txt-caracteristica">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Trazendo melhorias na parte estética e também na parte mecânica o lançamento do novo HB20 2018 já é bastante aguardado no Brasil. Recentemente o hatch ganhou duas novas versões e está cada vez mais esportivo. Saiba tudo sobre os preços, fotos e versões do novo HB20 2018 e sua promessa de continuar sendo um sucesso de vendas no mercado automobilístico do país. 
             </div>
             <div id="desc2" class="scroll txt-caracteristica">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <b>Câmbio:</b> Manual <br>
+                <b>KM:</b> 29.813 <br>
+                <b>Final da Placa:</b> 0<br>
+                <b>Cor:</b> Cinza Chumbo<br>
+                <b>Carroceria:</b> Hatchback <br>
+                <b>Portas:</b> 4 <br>
+                <b>Combustível:</b> Gasolina e álcool<br>
             </div>
             <div id="desc3" class="scroll txt-caracteristica">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <b>Ano:</b> 2013/2014
             </div>
             <div id="desc4" class="scroll txt-caracteristica">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Airbag<br>
+                Ar condicionado<br>
+                Desembaçador traseiro<br>
+                Direção hidráulica<br>
+                Freio ABS<br>
+                Retrovisores elétricos<br>
+                Rodas de liga leve<br>
+                Travas elétricas<br>
+                Vidros elétricos
             </div>
             
             <!-- OUTRO PROD -->
@@ -217,7 +231,7 @@
                     <div class="preco_carro">R$ 57.900,00</div>                           
 
                 </li>
-                <li style="margin-left: 20px;">
+                <li>
                     <div id="efeito_carro">
                         <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
                     </div>
@@ -226,7 +240,7 @@
                     <div class="preco_carro">R$ 52.900,00</div>                           
 
                 </li>
-                <li style="margin-left: 20px;">
+                <li>
                     <div id="efeito_carro">
                         <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
                     </div>
@@ -235,7 +249,7 @@
                     <div class="preco_carro">R$ 57.400,00</div>                           
 
                 </li>
-                <li style="margin-left: 20px;">
+                <li>
                     <div id="efeito_carro">
                         <center><input type="button" value="COMPRAR" class="btn_vermelho"></center>
                     </div>
