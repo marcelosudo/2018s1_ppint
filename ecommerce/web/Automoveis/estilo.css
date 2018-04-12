@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/04/2018, 18:33:35
+    Author     : aluno
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+html, body{
+    margin:0px;
+    padding: 0px;
+}
+
+.util{
+   width: 100%;
+   max-width: 940px;
+   margin:0px auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+}
+
+.marcas li{
+    
+    float: left;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.titulo_capa{
+    
+    font-size: 60px;
+    color:#000;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.limpar{
+    
+    clear:both;
+}
+
+.meio > li{
+    
+    float: left;
+    width: 80%;
+}
+
+    .meio > li:first-child{
+        
+        width: 20%;
+
+    }
+
+    .busca{
+        
+        clear:both;
+        margin-left: -40px;
+       
+    }
+    
+    .busca li{
+        
+        clear:both;
+        margin-left: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Noto Sans', sans-serif;
+        margin-bottom: 30px;
+       
+    }
+    
+    .inp_busca{
+        
+        width: 97%;
+        height: 30px;
+        border:1px solid #ccc;
+        padding-left: 5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top:10px;
+    }
+    
+    .inp_busca2{
+        
+        float:left;
+        width: 43%;
+        height: 30px;
+        border:1px solid #ccc;
+        padding-left: 5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-right:22px;
+    }
+    .inp_busca3{
+        
+        float:left;
+        width: 43%;
+        height: 30px;
+        border:1px solid #ccc;
+        padding-left: 5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        
+    }
+    .inp_busca4{
+        
+        float:left;
+        width: 43%;
+        height: 30px;
+        border:1px solid #ccc;
+        padding-left: 5px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-right:10px;
+        
+    }
+
+    .carros li{
+        
+        float:left;
+        margin-bottom: 25px;
+        max-width: 400px;
+        
+    }
+    
+    .nome_carro{
+        
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        
+    }
+    
+    .preco_carro{
+        
+        font-size: 18px;
+        color:#e20000;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+    }
+    
+    #efeito_carro{
+        
+        width: 215px;
+        height: 150px;
+        background: url(imagens/bg_carros.png) repeat;
+        z-index: 2;
+        position: absolute;        
+        padding-top: 80px;
+        opacity: 0;
+    }
+    
+    #efeito_carro:hover{
+        
+        opacity: 1;
+        
+    }
+     
+    
+    .btn_vermelho{
+        
+        padding: 10px 15px;
+        background: #f14d4d;
+        color:#fff;
+        font-family: 'Noto Sans', sans-serif;
+        border:none;
+        z-index: 3;
+    }
+    
+    /* DETALHE PRODUTO */
+    
+    .detalhes_prod{
+        
+        clear:both;    
+        margin-top: 50px;
+    }
+    
+        .detalhes_prod > li{
+        
+            float: left;
+            width: 40%;
+            margin-left: 120px;
+        }
+        
+        .detalhes_prod > li:first-child{
+            
+            width: 60%;
+            margin-left: -120px;
+        }
+        
+    .img_detalhes{
+        width: 100%;
+        max-width: 390px;
+    }
+    
+    .img_mini{
+        
+        width: 100%;
+        max-width: 100px;
+        border:2px solid;
+        
+    }
+    
+    .imagens_detalhes > li{
+        float: left;
+    }
+    
+    .nome_carro_d{
+        
+        font-size: 40px;
+        color: #000;
+        font-weight: 700;
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+    }
+    
+    .preco_carro_d{
+        
+        font-size: 25px;
+        color: #e20000;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        margin-top:70px;
+        float:left;
+    }
+    
+    .verdesc_carro_d{
+        
+        float:right;
+        margin-top:70px; 
+        font-size: 14px;
+        color: #a8a8a8;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+        .verdesc_carro_d a{
+            
+            color: #a8a8a8;
+        }
+    
+    .recomende_carro_d{
+      
+        padding-top:10px;
+        clear:both;
+        font-size: 14px;
+        color: #a8a8a8;
+        font-family: 'Noto Sans', sans-serif;
+        cursor:pointer;
+    }
+    
+    .puglins_redes li{
+        float: left;
+    }
+    
+    /* ---------- */
+
+#menu-desc{
+
+    clear: both;
+    width: 99%;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+#menu-desc li{
+
+    float: left;		
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: #777876;
+    font-weight: 300;
+    width: 231px;
+    text-transform: uppercase;
+    text-align: center;
+    border-left:1px solid #fff;
+    height: 80px; 
+    background-color: #fff;
+    border-bottom-color: transparent;
+}
+
+    #menu-desc li:first-child{
+
+        border-left:0px;
+        margin-left: -40px;
+    }
+
+    #desc1, #desc2, #desc3{
+
+	display: none;
+    }
+    
+    div.scroll {
+        height: 250px;
+        width: 951px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        border-width: 0 1px 1px 1px;
+        /* background-color: #f9f9f9; */
+        padding: 8px;
+        margin-top: -15px;
+    }
+    
+    .txt-caracteristica{
+        
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        color: #777876;
+        
+    }
+    
+    /* RECOMENDA */
+    
+    #pop{
+
+        background:url('imagens/bgp.png');
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        z-index:999;
+        width: 100%;
+        height: 100%;
+        display: none;
+
+      }
+      
+      #recomende{
+
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index:999;  
+            display: none;	
+            transition: all .3s linear;
+            max-width: 300px;
+            padding: 50px;
+            width: 100%;
+            background: #fff;
+            /* opacity: 0.75; */
+    }
