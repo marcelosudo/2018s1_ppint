@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cadastro Automovel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -131,7 +131,7 @@
 
                                 var row = $('<div class="row"></div>');
 
-                                for(var j = 0; j < (numItems > 4 ? 4 : (numItems + 1)) ; j++){
+                                for(var j = 0; j < (numItems > 4 ? 4 : numItems) ; j++){
                                     var item = '<div class="col-md-3">' +
                                                     '<div class="row">' + 
                                                         '<div class="col-md-2">' + 
