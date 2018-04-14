@@ -348,6 +348,16 @@
                     </li>
                     <li class="list-group-item">
                         <h4 class="list-group-item-heading">
+                            Jonas Almeida de Souza
+                        </h4>
+                        <p class="list-group-item-text">
+                            <strong>E-mail:</strong> jonas92sp@gmail.com
+                            <br>
+                            <strong>Github:</strong> jalsouza
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading">
                             José Alexandre Junqueira Ribeiro Junior
                         </h4>
                         <p class="list-group-item-text">
@@ -358,12 +368,12 @@
                     </li>
                     <li class="list-group-item">
                         <h4 class="list-group-item-heading">
-                            Jonas Almeida de Souza
+                            Leonardo da Silva Diuncanse
                         </h4>
                         <p class="list-group-item-text">
-                            <strong>E-mail:</strong> jonas92sp@gmail.com
+                            <strong>E-mail:</strong> leodiunka@gmail.com
                             <br>
-                            <strong>Github:</strong> jalsouza
+                            <strong>Github:</strong> Diuncanse
                         </p>
                     </li>
                     <li class="list-group-item">

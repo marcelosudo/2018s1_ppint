@@ -19,6 +19,7 @@
         <link href="../../assets/css/automoveis/cadastro.css" rel="stylesheet" type="text/css"/>
     
         <script>
+            var acessSelecionado = [];
             $(document).ready(function(){
                 pegarAcessorio();
                 
@@ -125,7 +126,7 @@
                         if (res.length > 0) {
                         
                             res.sort();
-
+ 
                             for(var i = 0; i < Math.ceil(res.length/4); i++){
                                 var numItems = res.length - (i * 4);
 
@@ -135,7 +136,7 @@
                                     var item = '<div class="col-md-3">' +
                                                     '<div class="row">' + 
                                                         '<div class="col-md-2">' + 
-                                                            (((i*4) + j < res.length) ? '<input type="checkbox" value="' + res[(i*4) + j] + '">' : '') + 
+                                                            (((i*4) + j < res.length) ? '<input type="checkbox" value="' + res[(i*4) + j] + '" onchange="selecionaAcess(this);">' : '') + 
                                                         '</div>' + 
                                                         '<div class="col-md-10">' + 
                                                             (((i*4) + j < res.length) ? '<label>' + res[(i*4) + j] + '</label>' : '') + 
@@ -153,6 +154,14 @@
                         }
                     }
                 });
+            }
+            
+            function selecionaAcess(item){
+                if (item.checked){
+                    acessSelecionado.push(item.value);
+                }else{
+                    acessSelecionado.splice(acessSelecionado.indexOf(item.value));
+                }
             }
         </script>
     </head>
