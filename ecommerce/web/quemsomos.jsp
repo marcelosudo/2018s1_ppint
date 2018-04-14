@@ -457,6 +457,8 @@
             <tr align=center bgcolor='#F2F2F2'><td>Nicholas Caetano</td> <td>nichollas36@hotmail.com</td></tr>
             <tr align=center bgcolor='#BDBDBD'><td>Valdeir Nascimento</td> <td>valdeir.nascimento@live.com</td></tr>
             <tr align=center bgcolor='#F2F2F2'><td>Zhao Jiacong</td> <td>zhaocontato@gmail.com</td></tr>
+            <tr align=center bgcolor='#BDBDBD'><td>Alex staduto</td> <td>alex_staduto@outlook.com.br</td></tr>
+             <tr align=center bgcolor='#F2F2F2'><td>Guilherme Rocha Camara</td> <td>guilherme.rocha.camara@gmail.com</td></tr>
         </table>        
 
 
