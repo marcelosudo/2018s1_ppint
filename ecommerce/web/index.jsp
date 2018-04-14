@@ -226,13 +226,15 @@ left: 28px;background-color: #007bff">Cadastrar
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
-                            <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+                            <a href="beauty.jsp">
+                                <img class="img-fluid rounded-circle" src="https://4.bp.blogspot.com/-sqtHn0DJ-Bk/V3_mG7xhXSI/AAAAAAAANsU/0wP_5EzHbwA7s84FWsioDWBE51sO4-MyQCLcB/s1600/produtos-beleza-toda-mulher-precisa-ter.jpeg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">DÃª um nome criativo!</h2>
-                            <p>Construa um texto criativo!</p>
+                            <h2 class="display-4">Produtos de beleza</h2>
+                            <p>Cosméticos em geral, tipo AVON, HINODE</p>
                         </div>
                     </div>
                 </div>
