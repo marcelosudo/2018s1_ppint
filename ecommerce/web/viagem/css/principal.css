@@ -1,0 +1,66 @@
+
+
+.grid-form{
+	width: 550px;
+	margin: 20px;
+	padding: 40px;
+	border: 1px solid #C9C9C9FF;
+	border-radius: 15px;
+}
+.grid-forms{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+footer{
+	padding: 25px;
+	height: 250px;
+	background-color: #565656FF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.grid-links{
+	display: flex;
+	flex-direction: column;
+}
+.grid-textos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 980px;
+}
+.links a{
+	color: ;
+
+}
+.social i{
+	margin-right: 8px;
+	margin-top: 30px;
+	color: white;
+}
+
+#facebook:hover{
+	color: #255BD9FF;
+}
+
+#twitter:hover{
+	color: #25C2D9FF;
+}
+
+#instagram:hover{
+	color: #E41C1AFF;
+}
+
+#whatsapp:hover{
+	color: #5DA16AFF;
+}
