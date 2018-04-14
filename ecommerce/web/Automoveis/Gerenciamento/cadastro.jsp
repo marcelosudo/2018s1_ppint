@@ -143,8 +143,12 @@
                                                         '</div>' + 
                                                     '</div>'+
                                                 '</div>';
-
+                                        
+                                    
+                                    
                                     $(row).append(item);
+                                    
+                                    $(row).find('[value="' + res[(i*4) + j] + '"]').prop('checked', (acessSelecionado.indexOf(res[(i*4) + j]) > -1));
                                 }
 
                                 $('.lista-acessorio').append(row);
