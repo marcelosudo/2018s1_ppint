@@ -11,9 +11,54 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home - Automóveis</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
 
+                 <nav class="util navbar navbar-expand-lg navbar-custom " style="background: #fff important!">
+                        <a class="navbar-brand" href="#">Site de carros</a>
+                       
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="Gerenciamento/cadastro.jsp">Cadastre-se</a>
+                            </li>
+                           <!-- <li class="nav-item" style="width: ">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>-->
+
+                          </ul>
+                         
+                         
+                          <form class="form-inline">
+                                <div class="input-group">
+                                  <!--<div class="input-group-prepend">
+                                    <span class="input-group-text " id="basic-addon1">  </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logar</button>-->
+                                </div>
+                              </form>
+                      </nav>
+        
+        
         <div class="util">
 
             <ul class="marcas">
