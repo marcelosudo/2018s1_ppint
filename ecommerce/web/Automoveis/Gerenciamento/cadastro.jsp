@@ -14,12 +14,13 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="../../assets/css/bootstrap-4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
-        <link href="../../assets/css/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="../../assets/css/automoveis/cadastro.css" rel="stylesheet" type="text/css"/>
-    
+        <script src="/ecommerce/assets/css/bootstrap-4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="/ecommerce/assets/css/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/ecommerce/assets/css/automoveis/cadastro.css" rel="stylesheet" type="text/css"/>
+      
         <script>
             var acessSelecionado = [];
+            
             $(document).ready(function(){
                 pegarAcessorio();
                 
@@ -53,7 +54,7 @@
             function pegarMarcas(filtro){
                 $('#txtFiltroMarca ~ a').remove();
                 $.ajax({
-                    url:"marcas.json",
+                    url:"/ecommerce/Automoveis/Gerenciamento/marcas.json",
                     dataType:"json",
                     success: function(dado){
                         var res = dado;
@@ -82,7 +83,7 @@
             function pegarCombustivel(filtro){
                 $('#txtFiltroCombustivel ~ a').remove();
                 $.ajax({
-                    url:"combustivel.json",
+                    url:"/ecommerce/Automoveis/Gerenciamento/combustivel.json",
                     dataType:"json",
                     success: function(dado){
                         var res = dado;
@@ -112,7 +113,7 @@
                 $('.lista-acessorio').empty();
                 $('.lista-acessorio').show();
                 $.ajax({
-                    url:"acessorio.json",
+                    url:"/ecommerce/Automoveis/Gerenciamento/acessorio.json",
                     dataType:"json",
                     success: function(dado){
                         var res = dado;
@@ -284,6 +285,7 @@
                 </div>
             </div>
             <br><br>
+            <input id="input-2" name="input2[]" type="file" class="file"  data-show-upload="false" data-show-caption="true" multiple>
         </div>
         <div id="acessorios" class="container">
             <div class="row">

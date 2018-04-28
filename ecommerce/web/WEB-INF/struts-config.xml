@@ -16,10 +16,12 @@
 
     <global-forwards>
         <forward name="welcome"  path="/Welcome.do"/>
+        <forward name="cadAutomoveis" path="/CadAutomoveis.do" />
     </global-forwards>
 
     <action-mappings>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        <action path="/CadAutomoveis" forward="/Automoveis/Gerenciamento/cadastro.jsp" />
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
