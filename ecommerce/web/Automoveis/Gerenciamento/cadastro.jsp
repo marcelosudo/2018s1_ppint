@@ -178,7 +178,7 @@
             </div>
             <div class="row">
                 <div class="col-md-2"><span>Marca:</span></div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="dropdown">
                         <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="ddlMarcar"
                                         data-toggle="dropdown" aria-hasopoup="true" aria-expanded="false">
@@ -190,6 +190,14 @@
                             </div>
                         </ul>
                     </div>
+                </div>
+                <div class="col-md-1">
+                    <input type="radio" id="chkNovo" value="Novo"/>
+                    <label>Novo</label>
+                </div>
+                <div class="col-md-1">
+                    <input type="radio" id="chkUsado" value="Usado"/>
+                    <label>Usado</label>
                 </div>
                 <div class="col-md-2"><span>Modelo:</span></div>
                 <div class="col-md-4">
