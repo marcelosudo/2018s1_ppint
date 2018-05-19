@@ -17,12 +17,42 @@
         <script src="/ecommerce/assets/css/bootstrap-4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="/ecommerce/assets/css/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="/ecommerce/assets/css/automoveis/cadastro.css" rel="stylesheet" type="text/css"/>
-      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/themes/explorer/theme.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/fileinput.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/themes/explorer/theme.min.js" type="text/javascript"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <script>
             var acessSelecionado = [];
             
             $(document).ready(function(){
                 pegarAcessorio();
+                $("#input-ke-1").fileinput({
+                    theme: "explorer",
+                    uploadUrl: "/file-upload-batch/2",
+                    allowedFileExtensions: ['jpg', 'png', 'gif'],
+                    overwriteInitial: false,
+                    initialPreviewAsData: true,
+                    removeIcon: '<i class="far fa-trash-alt"></i>',
+                    browseIcon: '<i class="far fa-folder-open"></i>',
+                    showUpload:false,
+                    layoutTemplates: {
+                        fileIcon: '<i class="fas fa-file"></i>',
+                        caption: '<div class="file-caption form-control {class}" tabindex="500">\n' +
+                                '  <span class="file-caption-icon"></span>\n' +
+                                '  <input class="file-caption-name" onkeydown="return false;" onpaste="return false;">\n' +
+                                '</div>',
+                        actions: '<div class="file-actions">\n' +
+                            '    <div class="file-footer-buttons">\n' +
+                            '        {delete}' +
+                            '    </div>\n' +
+                            '    {drag}\n' +
+                            '    <div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>\n' +
+                            '    <div class="clearfix"></div>\n' +
+                            '</div>',
+                        actionDelete: '<button type="button" class="kv-file-remove {removeClass}" title="{removeTitle}"{dataUrl}{dataKey}><i class="far fa-trash-alt"></i></button>\n'
+                    }
+                });
                 
                 $('.dropdown-toggle').dropdown();
                 
@@ -285,7 +315,9 @@
                 </div>
             </div>
             <br><br>
-            <input id="input-2" name="input2[]" type="file" class="file"  data-show-upload="false" data-show-caption="true" multiple>
+            <div class="file-loading">
+                <input id="input-ke-1" name="input-ke-1[]" type="file" multiple accept="image">
+            </div>
         </div>
         <div id="acessorios" class="container">
             <div class="row">

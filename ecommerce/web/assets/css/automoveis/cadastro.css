@@ -20,6 +20,10 @@
     margin-top: 10px;
 }
 
+.file-input{
+    margin-bottom: 7px;
+}
+
 @media (min-width: 768px){
     .lista-acessorio .col-md-3 {
         border-left: 1px lightgray solid;    
