@@ -30,7 +30,7 @@
                 $("#input-ke-1").fileinput({
                     theme: "explorer",
                     uploadUrl: "/file-upload-batch/2",
-                    allowedFileExtensions: ['jpg', 'png', 'gif'],
+                    allowedFileExtensions: ['jpg'],
                     overwriteInitial: false,
                     initialPreviewAsData: true,
                     removeIcon: '<i class="far fa-trash-alt"></i>',
