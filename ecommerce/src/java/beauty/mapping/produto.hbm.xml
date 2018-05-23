@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!--
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 
@@ -39,13 +39,7 @@ made subject to such option by the copyright holder.
 
 Contributor(s):
 -->
-<hibernate-configuration>
-  <session-factory>
-    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://auladosudo.mysql.dbaas.com.br:3306/auladosudo?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">auladosudo</property>
-    <property name="hibernate.connection.password">etep123</property>
-    <mapping resource="beauty/mapping/produto.hbm.xml"/>
-  </session-factory>
-</hibernate-configuration>
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="beauty.model.Produto" table="CadastroProdutoBeleza" optimistic-lock="version" polymorphism="implicit" select-before-update="false">
+  </class>
+</hibernate-mapping>
