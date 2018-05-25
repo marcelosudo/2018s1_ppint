@@ -29,6 +29,31 @@ ul{
     list-style: none;
 }
 
+/* TOPO */
+
+#bg_topo{
+
+    width: 100%;
+    height: 150px;
+    background: #e9e9e9;
+
+}
+
+#logo{
+
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+#gerenciamento{
+
+    float: right;
+    color: #000;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 .marcas li{
     
     float: left;
@@ -155,11 +180,11 @@ ul{
     #efeito_carro{
         
         width: 215px;
-        height: 150px;
+        height: 230px;
         background: url(imagens/bg_carros.png) repeat;
         z-index: 2;
         position: absolute;        
-        padding-top: 80px;
+        padding-top: 100px;
         opacity: 0;
     }
     
