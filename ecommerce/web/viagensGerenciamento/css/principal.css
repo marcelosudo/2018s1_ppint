@@ -7,18 +7,101 @@
 	border: 1px solid #C9C9C9FF;
 	border-radius: 15px;
 }
-.grid-forms{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+
+
+@font-face{
+	src: url(lib/fonts/OpenSans-Regular.tff);
+	font-family: open sans;
 }
 
+.menu{
+    border:2px solid #a5f;
+    overflow:hidden;
+    max-height:20px;
+    transition: all 1s ease-in-out;
+}
+main{
+	display: flex;
+	flex-direction: row;
+}
+.coluna1{
+	width: 30%;
+	color: white;
+}
+.menu-links{
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 16px;
+	background-color: #8D8FA9FF; 
+	color: white;
+	padding: 13px 0px 13px 0px;
+}
+.menu-links:hover{
+	background-color: #545467FF;
+	color: white;
+}
+.coluna2{
+	width: 70%;
+}
+.grid-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: 10px 10px 20px #C4C4C4FF;
+}
+.botoes-ger{
+	display: flex;
+	flex-direction: row;
+  	
+ 
+}
+.grid-forms1{
+    display: inline-block;
+    margin-top: 2px;
+}
 
+.pesquisa{
+	display: flex;
+	flex-direction: row;
+	width: 650px;
+	margin: 15px;
+}
 
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      border-width: 0px;
+      background-color:#545467FF;
+      color: white;
+    }
 
+.navbar-nav li a{
+	color: white;
+}
+    
+    /* Add a gray background color and some padding to the footer */
+    
+    
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
 
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+.max ul.opened {
+   max-height: 250px;
+}
 
-
+.teste{ 
+    text-align: right
+}
 
 footer{
 	padding: 25px;
@@ -38,10 +121,6 @@ footer{
 	flex-direction: row;
 	justify-content: space-around;
 	width: 980px;
-}
-.links a{
-	color: ;
-
 }
 .social i{
 	margin-right: 8px;

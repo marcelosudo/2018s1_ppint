@@ -1,3 +1,9 @@
+@font-face{
+	src: url(lib/fonts/OpenSans-Regular.tff);
+	font-family: open sans;
+}
+
+
 .subtitulo{
 	font-family: calibri;
 	font-size: 20px;
