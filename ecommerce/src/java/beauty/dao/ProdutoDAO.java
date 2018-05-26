@@ -22,7 +22,7 @@ public class ProdutoDAO {
     public ProdutoDAO(SessionFactory sf) {
         this.sf = sf;
     }
-    
+
     public List<Produto> getList() {
         Session session = sf.openSession();
         Transaction tx = session.beginTransaction();
