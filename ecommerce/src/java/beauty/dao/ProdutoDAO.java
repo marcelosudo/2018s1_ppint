@@ -6,6 +6,7 @@
 package beauty.dao;
 
 import beauty.model.Produto;
+import com.mysql.jdbc.Blob;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -36,7 +37,10 @@ public List<Produto> getList() throws SQLException {
             Produto produto = new Produto();
             produto.setCod(rs.getInt("cod"));
             produto.setNome(rs.getString("nome"));
-            produto.setValor(rs.getDouble("valor"));
+            produto.setFilial(rs.getString("filial"));
+            produto.setValidade(rs.getDate("validade"));
+            produto.setValor(rs.getDouble("preco"));
+            produto.setFoto((Blob) rs.getBlob("foto"));
             data.add(produto);
         }
 
