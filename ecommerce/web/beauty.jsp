@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <c:forEach var="i" begin="0" end="8">
+                        <c:forEach var="produto" items="${produtos}">
                             <div class="col-md-4">
                                 <jsp:include page="partials/beauty/product_card.jsp" />
                             </div>

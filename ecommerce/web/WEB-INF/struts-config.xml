@@ -22,7 +22,11 @@
     <action-mappings>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
         <action path="/CadAutomoveis" forward="/Automoveis/Gerenciamento/cadastro.jsp" />
+        <action path="/BeautyProducts" type="beauty.controller.ProdutoAction">
+            <forward name="success" path="/beauty.jsp"/>
+        </action>
     </action-mappings>
+    
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
 
