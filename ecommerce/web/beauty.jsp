@@ -21,7 +21,9 @@
                     <jsp:include page="partials/beauty/filter.jsp" />
                 </div>
                 <div class="col-md-9">
-                    <div class="row" id="produtos"></div>
+                    <div class="row" id="produtos">
+                        carregando...
+                    </div>
                 </div>
             </div>
         </div>

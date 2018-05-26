@@ -25,6 +25,10 @@
         <servlet-name>ProdutosBelezaAction</servlet-name>
         <servlet-class>beauty.controller.ProdutosBelezaAction</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VendaBelezaAction</servlet-name>
+        <servlet-class>beauty.controller.VendaBelezaAction</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
@@ -36,6 +40,10 @@
     <servlet-mapping>
         <servlet-name>ProdutosBelezaAction</servlet-name>
         <url-pattern>/ProdutosBelezaAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VendaBelezaAction</servlet-name>
+        <url-pattern>/VendaBelezaAction</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

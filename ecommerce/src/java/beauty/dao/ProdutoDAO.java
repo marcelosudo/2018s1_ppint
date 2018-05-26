@@ -12,13 +12,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  *
  * @author joaom
  */
 public class ProdutoDAO extends DAO {
-    
-public List<Produto> getList() throws SQLException {
+
+    public List<Produto> getList() throws SQLException {
 
         //Conexão com banco de dados
         start();
@@ -46,5 +47,26 @@ public List<Produto> getList() throws SQLException {
 
         stop();
         return data;
+    }
+
+    public Produto getProductById(int cod) throws SQLException {
+        start();
+        Statement stmt = conn.createStatement();
+
+        String sql = "SELECT * FROM CadastroProdutoBeleza where cod = " + cod;
+        ResultSet rs = stmt.executeQuery(sql);
+
+        Produto produto = new Produto();
+        while (rs.next()) {
+            produto.setCod(rs.getInt("cod"));
+            produto.setNome(rs.getString("nome"));
+            produto.setFilial(rs.getString("filial"));
+            produto.setValidade(rs.getDate("validade"));
+            produto.setValor(rs.getDouble("preco"));
+            produto.setFoto((Blob) rs.getBlob("foto"));
+        }
+
+        stop();
+        return produto;
     }
 }
