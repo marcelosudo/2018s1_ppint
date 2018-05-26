@@ -9,10 +9,9 @@
     </head>
     <body>
         <jsp:include page="partials/beauty/menu.jsp" />
-        
+
         <div class="container">
             <jsp:include page="partials/beauty/carousel.jsp" />
-            <jsp:include page="partials/beauty/banners.jsp" />
             <jsp:include page="partials/beauty/filter_summary.jsp" />
         </div>
 
@@ -22,19 +21,28 @@
                     <jsp:include page="partials/beauty/filter.jsp" />
                 </div>
                 <div class="col-md-9">
-                    <div class="row">
-                        <c:forEach var="produto" items="${produtos}">
-                            <div class="col-md-4">
-                                <jsp:include page="partials/beauty/product_card.jsp" />
-                            </div>
-                        </c:forEach>
-                    </div>
+                    <div class="row" id="produtos"></div>
                 </div>
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div class="container">
+            <jsp:include page="partials/beauty/banners.jsp" />
+        </div>
+
+        <script type="text/x-handlebars-template" id="product-card">
+            {{#each produtos}}
+                <div class="col-md-4">
+                    <jsp:include page="partials/beauty/product_card.jsp" />
+                </div>
+            {{/each}}
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="assets/scripts/handlebars.js"></script>        
+        <script src="assets/scripts/beauty.js"></script>
+
     </body>
 </html>
