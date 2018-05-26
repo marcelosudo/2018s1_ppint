@@ -5,34 +5,42 @@
  */
 package beauty.dao;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import beauty.model.Produto;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 /**
  *
  * @author joaom
  */
-public class ProdutoDAO {
+public class ProdutoDAO extends DAO {
+    
+public List<Produto> getList() throws SQLException {
 
-    private final SessionFactory sf;
+        //Conexão com banco de dados
+        start();
 
-    public ProdutoDAO(SessionFactory sf) {
-        this.sf = sf;
-    }
+        //Cria um statement para podermos mandar um SQL para o banco
+        Statement stmt = conn.createStatement();
 
-    public List<Produto> getList() {
-        Session session = sf.openSession();
-        Transaction tx = session.beginTransaction();
-        
-        Query query = session.createQuery("from Produto where validade > now()");
-        List<Produto> listOfProducts = query.list();
-        
-        tx.commit();
-        session.close();
-        
-        return listOfProducts;
+        //Mandamos o SQL para o banco e obtemos um ResultSet
+        String sql = "SELECT * FROM CadastroProdutoBeleza";
+        ResultSet rs = stmt.executeQuery(sql);
+
+        // Lista dos objetos de retorno
+        List<Produto> data = new ArrayList<Produto>();
+        //Percorrendo o ResultSet e obtendo os valores do banco
+        while (rs.next()) {
+            Produto produto = new Produto();
+            produto.setCod(rs.getInt("cod"));
+            produto.setNome(rs.getString("nome"));
+            produto.setValor(rs.getDouble("valor"));
+            data.add(produto);
+        }
+
+        stop();
+        return data;
     }
 }

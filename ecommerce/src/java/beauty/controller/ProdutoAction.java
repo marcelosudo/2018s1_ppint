@@ -8,13 +8,11 @@ package beauty.controller;
 import beauty.dao.ProdutoDAO;
 import beauty.model.Produto;
 import java.util.List;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.hibernate.SessionFactory;
 
 /**
  *
@@ -39,16 +37,9 @@ public class ProdutoAction extends org.apache.struts.action.Action {
     public ActionForward execute(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
-        SessionFactory sf = (SessionFactory) ctx.getAttribute("SessionFactory");
-        ProdutoDAO dao = new ProdutoDAO(sf);
+        ProdutoDAO dao = new ProdutoDAO();
         List<Produto> produtos = dao.getList();
         request.getSession().setAttribute("produtos", produtos);
         return mapping.findForward(SUCCESS);
-    }
-    
-    private ServletContext ctx;
-
-    public void setServletContext(ServletContext sc) {
-        this.ctx = sc;
     }
 }
