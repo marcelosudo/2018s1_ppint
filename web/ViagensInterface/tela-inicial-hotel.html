@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home Viagens</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            .banner{
+                width: 100%;
+               
+            }
+            .carousel-inner,.carousel,.item,.container,.fill {
+                height:500px;
+                width:100%;
+                background-position:center center;
+            }
+            .menu{
+                width: 100%;
+                height: 80px;
+                background: black;
+            }
+            .card{
+                float: left;
+                margin: 40px;
+                
+            }
+            .card:hover{
+                cursor: pointer;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            h1{
+                margin-top:50px;
+                color: #1a237e;
+            }
+            
+            footer{
+                width: 100%;
+                height: 300px;
+            }
+            .navbar-custom {
+                color: #FFFFFF;
+                background-color: #1e3799 !important;
+            }
+            .navbar-custom a{
+              color: #fff;
+            }
+            .card-title{
+              text-align: center;
+            }
+            .navbar{
+             
+              position: fixed !important;
+              z-index: 10;
+              width: 100%;
+
+            }
+            .pesquisa{
+              position: absolute;
+              width: 300px;
+              left:30%;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="pesquisa">
+
+        </div>
+       
+                <nav class="navbar navbar-expand-lg navbar-custom " style="background: #fff important!">
+                        <a class="navbar-brand" href="#">Site de viagens</a>
+                       
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="../viagensGerenciamento/viagem.html">Cadastre-se</a>
+                            </li>
+                           <!-- <li class="nav-item" style="width: ">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>-->
+
+                          </ul>
+                         
+                         
+                          <form class="form-inline">
+                                <div class="input-group">
+                                  <!--<div class="input-group-prepend">
+                                    <span class="input-group-text " id="basic-addon1">  </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logar</button>-->
+                                </div>
+                              </form>
+                      </nav>
+                      <div class="pesquisa">
+                        <input type="email" class="form-control" >
+                      </div>
+        <div class="banner">
+            <div>
+
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="luxury-3115234.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="temple-2904173.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="dhammakaya-pagoda-472496.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        </div>
+        <div class="container " style="margin-top:2em;">
+          
+            <h1 class="display-4 text-center" style="margin-top:2em;margin-bottom: em;">VIAGENS NACIONAIS</h1>
+            <hr>
+            <div class="card  mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent " style="padding: 0px;">
+                            <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                    </div>
+                    <div class="card-body ">
+                      <h5 class="card-title">Viagem para recife</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent text-center">
+                      <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                    </div>
+                  </div>
+                  <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent " style="padding: 0px;">
+                                <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                        </div>
+                        <div class="card-body ">
+                          <h5 class="card-title">Viagem para recife</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                          <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                        </div>
+                      </div>
+                      <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent " style="padding: 0px;">
+                                    <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title">Viagem para recife</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-center">
+                              <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                            </div>
+                          </div>
+                          
+                              
+                                      
+           
+        </div>
+        <div class="container " style="margin-top:2em;">
+              
+                <h1 class="display-4 text-center" style="margin-top:2em;margin-bottom: em;">VIAGENS INTERNACIONAIS</h1>
+                <hr>
+                <div class="card  mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent " style="padding: 0px;">
+                                <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                        </div>
+                        <div class="card-body ">
+                          <h5 class="card-title">Viagem para recife</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer bg-transparent text-center">
+                          <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                        </div>
+                      </div>
+                      <div class="card  mb-3" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent " style="padding: 0px;">
+                                    <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title">Viagem para recife</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-center">
+                              <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                            </div>
+                          </div>
+                          <div class="card  mb-3" style="max-width: 18rem;">
+                                <div class="card-header bg-transparent " style="padding: 0px;">
+                                        <img class="card-img-top" src="https://abrilviagemeturismo.files.wordpress.com/2016/12/thinkstockphotos-474448950.jpeg?quality=70&strip=info&w=680&h=453&crop=1" alt="Card image cap">
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title">Viagem para recife</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer bg-transparent text-center">
+                                  <button type="button" class="btn btn-primary btn-lg btn-block">Ver detalhes</button>
+                                </div>
+                              </div>
+                              
+                                  
+                                               
+               
+            </div>
+    </body>
+    <footer>
+
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+
+            $("button").click(function(){
+                location.href="produtoDetalhes.html";
+            });
+
+
+
+        });
+    </script>
+</html>

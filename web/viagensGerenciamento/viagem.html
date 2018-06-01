@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cadastro Viagens</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/principal.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/textos.css">
+  <link rel="stylesheet" href="css/botoes.css">
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Veiculos</a></li>
+        <li><a href="#">Viagens</a></li>
+        <li><a href="#">outros</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="coluna1">
+  <div class="grid-menu">
+          <div class="menu-links">hoteis</div>
+          <div class="menu-links">produtos</div>
+          <div class="menu-links">serviços</div>
+  </div>
+</div>     
+<div class="coluna2">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://bloghoteis.com/wp-content/uploads/2017/08/Recife_capa-1200x400.jpg" alt="Image">     
+        </div>
+      </div>
+  </div>
+      <div class="botoes-ger nav nav-tabs">
+              <div class="btn-cinza nav-item" id="btn-h" href="#first-tab" data-toggle="tab" id="btn-hotel">hoteis</div>
+              <div class="btn-cinza" id="btn-p" href="#second-tab" data-toggle="tab" id="btn-produto" >produto</div>    
+              <div class="btn-cinza" id="btn-s" href="#third-tab" data-toggle="tab" id="btn-servico">serviços</div>   
+      </div> 
+        <div class="pesquisa">
+          <i class="fa fa-search btn-cinza"></i>
+          <input type="text" class="form-control" />
+          <select class="custom-select btn-cinza" id="inputGroupSelect01">
+            <option selected>selecione</option>
+            <option value="1">hoteis</option>
+            <option value="2">produto</option>
+            <option value="3">serviços</option>
+          </select>
+        </div>
+        <table class="table table-hover table-dark table-sm">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Quantidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>Otto</td>
+                <td>12,25</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>2</td>
+                <td>Thornton</td>
+                <td>52,5</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>3</td>
+                <td>Otto</td>
+                <td>789,14</td>
+              </tr>
+            </tbody>
+          </table>
+      <div class="grid-forms tab-content" id="nav-tabContent">
+        <div class="grid-form tab-pane active" id="first-tab">
+          <h3> Cadastro de Hoteis</h3>
+          <form class="form-horizontal" method="post">
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="endereco">endereço</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="numero">numero</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="bairro">bairro</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+            <div class="form-group subtitulo-cadastro">
+              <label class="control-label subtitulo-cadastro" for="cidade">cidade</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro"for="cidade">estado</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="cep">cep</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+            <button type="submit" class="btn btn-primary active btn-md" >cadastrar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >atualizar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >exclusão</button>
+            <input type="reset" class="btn btn-primary active btn-md" value="apagar" />
+          </form>
+        </div>
+        <div class="grid-form tab-pane" id="second-tab">
+          <h3> Cadastro de Produtos</h3>
+          <form class="form-horizontal" method="post">
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="endereco">nome</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="numero">quantidade</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="bairro">valor</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <button type="submit" class="btn btn-primary active btn-md" >cadastrar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >atualizar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >exclusão</button>
+            <input type="reset" class="btn btn-primary active btn-md" value="apagar" />
+          </form>
+        </div>
+        <div class="grid-form tab-pane" id="third-tab" >
+          <h3> Cadastro de serviços</h3>
+          <form class="form-horizontal" method="post">
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="endereco">nome</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="numero">quantidade</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label subtitulo-cadastro" for="bairro">valor</label>
+              <input type="text" size="40" class="form-control" maxlength="30" id="endereco" />
+            </div>
+
+            <button type="submit" class="btn btn-primary active btn-md" >cadastrar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >atualizar</button>
+			      <button type="submit" class="btn btn-primary active btn-md" >exclusão</button>
+            <input type="reset" class="btn btn-primary active btn-md" value="apagar" />
+          </form>
+        </div>
+	   </div>
+</main>
+<footer>
+  <div class="grid-textos">
+    <div class="grid-links">
+        <p class="subtitulo">serviços</p>
+        <a class="links" href="">home</a>
+        <a class="links" href="">veiculos</a>
+        <a class="links" href="">viajens</a>
+        <a class="links" href="">outros</a>
+    </div>
+    <div class="grid-links">
+        <p class="subtitulo">empresa</p>
+        <a class="links" href="">blog</a>
+        <a class="links" href="">contato</a>
+        <a class="links" href="">produtos</a>
+    </div>
+    <div class="grid-links">
+        <p class="subtitulo">conta</p>
+        <a class="links" href="">cadastro</a>
+        <a class="links" href="">log in</a>
+    </div>
+  </div>
+  <div class="social">
+    <i class="fa fa-facebook fa-2x" id="facebook"></i>
+    <i class="fa fa-twitter fa-2x" id="twitter"></i>
+    <i class="fa fa-instagram fa-2x" id="instagram"></i>
+    <i class="fa fa-whatsapp fa-2x" id="whatsapp"></i>
+  </div>
+</footer>
+</body>
+</html>

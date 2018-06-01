@@ -1,0 +1,30 @@
+@font-face{
+	src: url(lib/fonts/OpenSans-Regular.tff);
+	font-family: open sans;
+}
+
+
+.subtitulo{
+	font-family: calibri;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: white;
+}
+
+.subtitulo-cadastro{
+	color: grey;
+	font-family: calibri;
+	text-transform: capitalize;
+}
+
+.links{
+	color: #BFBFBFFF;
+	font-family: calibri;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.links:hover{
+	color: #54AA8FFF;
+	text-decoration: none;
+}

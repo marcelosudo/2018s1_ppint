@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            body{
+                
+                background-image: url("img/fundo_azul.png");
+            }
+            
+            div.formulario{
+                margin: auto;
+                width: 350px;
+                background: #fff;
+                border: 1px solid #CeCeCe;
+                padding: 10px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+            
+            div.footer{
+                margin: auto;
+                width: 310px;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="formulario" >
+            <div style=" padding: 10px">
+                <h1 style=" margin: 0px 0px 10px 0px;">Criar conta</h1>
+                <div style="margin-bottom: 10px;">
+                    <div>
+                        <label for="ap_customer_name">Seu nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="us_name" size="50" autocomplete="off" name="customerName" tabindex="1" type="text">
+                    </div>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <div>
+                        <label for="ap_email" tabindex="2">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" maxlength="64" id="us_email" name="email" tabindex="3" type="email" placeholder="ex: jose@email.com">
+                    </div>
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <div style="margin-bottom: 10px;">
+                        <div>
+                            <label tabindex="4" class="a-form-label">Senha</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" maxlength="1024" id="us_password" autocomplete="off" placeholder="Pelo menos 8 caracteres" name="password" tabindex="5"  type="password">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="a-form-label">Insira a senha mais uma vez</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="ap_password_check" autocomplete="off" placeholder="Pelo menos 8 caracteres" name="passwordCheck" tabindex="6"  type="password">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button  style=" margin: auto; margin-bottom: 10px; width: 100%;" type="submit" class="btn btn-primary">Criar uma conta!</button> 
+                </div>
+                <div style=" margin: 4px;">
+                    <p class="small">Ao criar uma conta, você concorda com as <a href="">Condições de uso</a> e com a <a href="">Política de privacidade</a>.</p>
+                </div>
+                <div style=" margin-top: 25px;">
+                    Você já tem uma conta?<a href="">Fazer login</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer small">
+            <a>Condições de uso</a>
+            <span style="margin-left: 15px;"></span>
+            <a >Politica de privacidade</a>
+            <span style="margin-left: 15px;"></span>
+            <a>Ajuda</a>
+        </div>
+
+    </body>
+</html>
