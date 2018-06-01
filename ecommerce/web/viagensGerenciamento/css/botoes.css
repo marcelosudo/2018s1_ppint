@@ -1,0 +1,14 @@
+.btn-cinza{
+	background-color: #545467FF;
+	color: white;
+	border: 2px solid #545467FF;
+	padding: 5px 10px 5px 10px;
+	text-transform: capitalize;
+	box-shadow: 5px 5px 10px #C4C4C4FF;
+}
+
+.btn-cinza:hover{
+	background-color: white;
+	color: #545467FF;
+	cursor: pointer;
+}

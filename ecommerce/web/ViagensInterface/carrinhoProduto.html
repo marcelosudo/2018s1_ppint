@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html ng-app="shop">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width, initial-scale=1">
+	<title>Hoteis.com</title>
+	<link rel="stylesheet" href="libgrupo2/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libgrupo2/lib/owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libgrupo2/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libgrupo2/lib/raty/lib/jquery.raty.css">
+	<link rel="stylesheet" href="libgrupo2/css/orlando.css">
+	<link rel="stylesheet" href="libgrupo2/css/orlando-mobile.css">
+	<link rel="icon" href="libgrupo2/carrinhoProduto/img/icon.png" type="image/x-icon" />
+
+</head>
+
+<body>
+
+	<header>
+
+		<div id="menu-mobile-mask" class="visible-xs"></div>
+
+		<div class="container">
+			<img id="logotipo" src="../carrinhoProduto/img/logo-hotel.png" alt="Logotipo">
+		</div>
+
+		<div class="header-black">
+
+			<div class="container">
+
+				<button id="btn-bars" type="button">
+					<i class="fa fa-bars"></i>
+				</button>
+				<button id="btn-search" type="button">
+					<i class="fa fa-search"></i>
+				</button>
+
+			</div>
+
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+
+				<nav id="menu" class="pull-right">
+					<ul>
+						<li>
+							<a href="tela-inicial-hotel.html">Página Inicial</a>
+						</li>
+						<li>
+							<a href="#">Produtos</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-shopping-cart"></i> Carrinho</a>
+						</li>
+						<li>
+							<button class="btn btn-roxo">Acesse sua Conta</button>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<section>
+
+				<div class="container">
+
+					<div class="row text-center title-default-roxo" style="margin:40px auto;">
+						<h2>carrinho de compras</h2>
+						<hr>
+					</div>
+
+					<table id="cart-products" class="table table-bordered">
+						<thead>
+							<tr>
+								<th colspan="2">Produto(s)</th>
+								<th class="text-center">Noite(s)</th>
+								<th class="text-center">Dados</th>
+								<th class="text-center">Valor Unitário</th>
+								<th class="text-center">Valor Total</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="produto in produtos">
+								<td class="text-center">
+									<img src="../carrinhoProduto/img/produtos/hotel01.jpg">
+								</td>
+								<td>Hotel São Paulo 4 Estrelas</td>
+								<td class="col-xs-2">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button class="btn text-roxo" type="button">
+												<i class="fa fa-chevron-down">
+													<span style="margin-left: 40px;">1</span>
+												</i>
+											</button>
+										</span>
+										<input type="text" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn text-roxo" type="button">
+												<i class="fa fa-chevron-up"></i>
+											</button>
+										</span>
+									</div>
+								</td>
+								<td class="text-center col-xs-2">
+									<p>Hotel IBIS em SP - 4 estrelas
+										<br/>Cancelamento Grátis</p>
+									<strong class="text-roxo">Café da manhã Grátis</strong>
+								</td>
+								<td class="text-center">R$ 2.500,00</td>
+								<td class="text-center">R$ 2.500,00</td>
+								<td class="text-center">
+									<button class="btn text-roxo" type="button">
+										<i class="fa fa-close"></i>
+									</button>
+								</td>
+							</tr>
+							<tr ng-repeat="produto in produtos">
+								<td class="text-center">
+									<img src="../carrinhoProduto/img/produtos/hotel02.jpg">
+								</td>
+								<td>Pousada Arraial do Cabo RJ</td>
+								<td class="col-xs-2">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button class="btn text-roxo" type="button">
+												<i class="fa fa-chevron-down">
+													<span style="margin-left: 40px;">1</span>
+												</i>
+											</button>
+										</span>
+										<input type="text" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn text-roxo" type="button">
+												<i class="fa fa-chevron-up"></i>
+											</button>
+										</span>
+									</div>
+								</td>
+								<td class="text-center col-xs-2">
+									<p>Pousada Beira Mar em RJ - 3 estrelas
+										<br/>Cancelamento Grátis</p>
+									<strong class="text-roxo">Café da manhã Grátis</strong>
+								</td>
+								<td class="text-center">R$ 2.500,00</td>
+								<td class="text-center">R$ 2.500,00</td>
+								<td class="text-center">
+									<button class="btn text-roxo" type="button">
+										<i class="fa fa-close"></i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!--<div id="calculo-de-frete" class="row">
+						<div class="col-sm-8">
+							<div class="box-outline-grey">
+								<p style="margin:28px auto;">Simule o prazo de entrega e o frete para seu CEP abaixo:</p>
+								<div class="input-group col-xs-4" style="margin:0 auto;">
+									<input type="text" class="form-control" ng-model="cep">
+									<span class="input-group-btn">
+										<button class="btn btn-default" ng-click="calcularFrete(cep)" type="button">Calcular Frete</button>
+									</span>
+								</div>
+							</div>
+						</div>-->
+					<div class="col-sm-4">
+						<div class="box-cart-totais">
+							<table class="table">
+								<tr>
+									<td>Subtotal Item:</td>
+									<td class="text-right">R$ 4985,00</td>
+								</tr>
+								<tr>
+									<td>Frete:</td>
+									<td class="text-right">R$ 15,00</td>
+								</tr>
+								<tr style="border-top:#999 1px solid;">
+									<td class="text-roxo text-bold">Total:</td>
+									<td class="text-roxo text-bold text-right">R$ 5000,00</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="row text-center title-default-roxo" style="margin:40px auto;">
+						<h4>Pague em até 12x sem juros</h2>
+							<img src="../carrinhoProduto/img/img_cartoes.png">
+							<hr>
+					</div>
+
+					<button type="button" class="btn btn-roxo pull-right" style="margin-top:10px">
+						<i class="fa fa-shopping-cart"></i> Comprar
+					</button>
+
+				</div>
+
+			</section>
+
+		</div>
+
+</body>
+
+<footer>
+
+	<div class="row row-cinza-claro">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-2 text-center hidden-xs">
+
+					<img class="logotipo" src="img/logo-hotel.png" alt="Logotipo">
+
+				</div>
+				<div class="col-md-10">
+
+					<div class="row row-cols">
+						<div class="col-md-4 col-popular-post hidden-xs">
+
+						</div>
+						<div class="col-md-4 col-links hidden-xs">
+
+						</div>
+						<div class="col-md-4 col-get-in-touch">
+
+							<h4 class="hidden-xs">ENTRE EM CONTATO</h4>
+
+							<address class="hidden-xs">
+								<i class="fa fa-map-marker"></i>
+								<span>Avenida Paulista, 153
+									<br/>São Paulo, Andar 5</span>
+							</address>
+
+							<p class="hidden-xs">
+								<a href="#">
+									<i class="fa fa-phone"></i>(19) 3216-5545</a>
+							</p>
+
+							<div class="row-fluid visible-xs">
+								<div class="col-xs-6">
+									<a href="#" class="btn btn-footer ">
+										<i class="fa fa-map-marker"></i>Localização</a>
+								</div>
+								<div class="col-xs-6">
+									<a href="#" class="btn btn-footer">
+										<i class="fa fa-phone"></i>Telefone</a>
+								</div>
+							</div>
+
+							<ul class="list-unstyled list-socials">
+								<li>
+									<a href="#" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fa fa-pinterest-p"></i>
+									</a>
+								</li>
+								<li class="page-up">
+									<a href="#" id="page-up">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row row-cinza-escuro">
+
+		<div class="container copyright-mobile">
+
+			<p class="pull-left">Copyright © Todos os direitos reservados.</p>
+
+		</div>
+
+	</div>
+
+</footer>
+
+</html>

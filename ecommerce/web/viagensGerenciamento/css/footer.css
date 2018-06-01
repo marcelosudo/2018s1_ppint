@@ -1,0 +1,30 @@
+.social i{
+	margin-right: 8px;
+	margin-top: 30px;
+	color: white;
+}
+
+#facebook:hover{
+	color: #255BD9FF;
+}
+
+#twitter:hover{
+	color: #25C2D9FF;
+}
+
+#instagram:hover{
+	color: #E41C1AFF;
+}
+
+#whatsapp:hover{
+	color: #5DA16AFF;
+}
+.links{
+	font-family: open sans;
+	
+}
+
+@font-face{
+	src: url(lib/fonts/OpenSans-Regular.tff);
+	font-family: open sans;
+}
